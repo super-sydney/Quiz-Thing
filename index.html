@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Quiz Thing</title>
-<meta charset="utf-8">
+	<title>Quiz Thing</title>
+	<meta charset="utf-8">
 </head>
-<body onload="reload()">
-<script src="Quiz.js" type="text/javascript"</script>
-<div id="createNew">
-<button onclick="reload()">Cancel</button>
-<p>Write your terms and definitions with '==' in between. example:<br>term == definition<br>1+1 == 2<br>question == answer</p>
-<p>Name:</p>
-<input id="name">
-<p>Terms & Definitions:</p>
-<textarea id="text"></textarea>
-<button onclick="saveQuiz()">Done</button>
-</div>
-<div id="menu">
-<button onclick="newQuiz()">Create New Quiz</button><button onclick="localStorage.clear(),reload()">Clear quizzes</button><br>
-<p id="noQuizzes" style="position:absolute;display:none;color:#808080FF;top:40%;font-size:40px">You haven't made any quizzes yet</p>
-</div>
-<div id="quiz">
-<button onclick="reload()">Back</button>
-<p id="question">Term/Definition</p>
-<input id="input" autocomplete="off">
-<button id="submit">Submit</button>
-</div>
+<body onload="reload();">
+	<script type="text/javascript" src="Quiz.js"></script>
+	<div id="createNew">
+		<button onclick="reload()">Cancel</button>
+		<p>Write your terms and definitions with '==' in between. example:<br>term == definition<br>1+1 == 2<br>question == answer</p>
+		<p>Name:</p>
+		<input id="name">
+		<p>Terms & Definitions:</p>
+		<textarea id="text"></textarea>
+		<button onclick="saveQuiz();">Done</button>
+	</div>
+	<div id="menu">
+		<button onclick="newQuiz();">Create New Quiz</button><button onclick="localStorage.clear();reload();">Clear quizzes</button><br>
+		<p id="noQuizzes" style="position: absolute; display: none; color: #808080FF; top: 40%; font-size: 40px">You haven't made any quizzes yet</p>
+	</div>
+	<div id="quiz">
+		<button onclick="reload();">Back</button>
+		<p id="question">Term/Definition</p>
+			<input id="input" autocomplete="off" onkeypress="">
+			<button id="submit">Submit</button>
+	</div>
 </body>
 </html>
